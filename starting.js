@@ -4,6 +4,20 @@ var scroll = window.requestAnimationFrame ||
 
 var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
 
+function loop() {
+    elementsToShow.forEach(function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+      } else {
+        element.classList.remove('is-visible');
+      }
+    });
+    scroll(loop);
+}
+
+loop();
+
+
 function isElementInViewport(el) {
   if (typeof jQuery === "function" && el instanceof jQuery) {
     el = el[0];
@@ -20,17 +34,4 @@ function isElementInViewport(el) {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
-
-function loop() {
-    Array.prototype.forEach.call(elementsToShow, function(element){
-      if (isElementInViewport(element)) {
-        element.classList.add('is-visible');
-      } else {
-        element.classList.remove('is-visible');
-      }
-    });
-    scroll(loop);
-}
-
-loop();
-*/
+/*

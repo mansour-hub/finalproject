@@ -113,3 +113,105 @@ img{
 	}
 }
 */
+
+.room_box {
+	box-sizing:border-box;
+}
+
+div{
+	display: block;
+}
+
+h2{
+	text-align: center;
+	margin-top:10%;
+	font-size:900%;
+}
+
+.room_photo {
+    position: absolute;
+    margin: 0px, 50px;   
+}
+
+.escape_room{
+	width: 500px;
+	height: 500px;
+	margin-left: 200px;
+}
+.room_desc{
+	text-align: center;
+}
+
+.room_info{
+	margin-top: 0;
+	min-width: 320px;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.info_t1{
+	letter-spacing: 1px;
+	margin-left:215px;
+	font-size: 20px;
+	margin-top: 12px;
+}
+
+p{
+	margin-bottom: 20px;
+}
+
+.people{
+	width: 80px;
+	height: 80px ;
+	margin-left:200px;
+	margin-bottom: 20px: 
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.room_clock{
+	width: 80px;
+	height: 80px ;
+	margin-left:500px;
+	margin-bottom: 20px;
+	position:relative;
+	bottom: 145px; 
+}
+
+.info_t2{
+	letter-spacing: 1px;
+	margin-left:500px;
+	font-size: 20px;
+	margin-top: 12px;
+	position:relative;
+	bottom: 165px;
+}
+
+.money{
+	width: 80px;
+	height: 80px ;
+	margin-left:800px;
+	margin-bottom: 20px;
+	position:relative;
+	bottom: 310px; 
+}
+
+.info_t3{
+	letter-spacing: 1px;
+	margin-left:800px;
+	font-size: 20px;
+	margin-top: 12px;
+	position:relative;
+	bottom: 330px;
+}
